@@ -1,10 +1,5 @@
 package modele;
 
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.Row;
-
-import java.util.Iterator;
 import java.util.Random;
 
 public class Relation {
