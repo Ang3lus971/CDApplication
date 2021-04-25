@@ -16,8 +16,8 @@ public class DAP {
     public DAP(){
 
         // On récupère les fichiers nous servant à pseudonymiser
-        File fichierExcelSource = new File("C:\\Users\\Lsvai\\Desktop\\Conception et déveleppement d'une application\\Jeu de données\\exemple_ce.xls");
-        File fichierExcelRelation = new File("C:\\Users\\Lsvai\\Desktop\\Conception et déveleppement d'une application\\Relation.xls");
+        File fichierExcelSource = new File("PATHNAME\\exemple_ce.xls");
+        File fichierExcelRelation = new File("PATHNAME\\Relation.xls");
 
         // On lance la creation du workook pour les DAP
         Constructeur constructeurDAP = new Constructeur();
@@ -80,8 +80,8 @@ public class DAP {
         try {
 
             // On fini par exporter nos workook dans les fichiers associés
-            FileOutputStream outWorkbookSource = new FileOutputStream("C:\\Users\\Lsvai\\Desktop\\Conception et déveleppement d'une application\\Jeu de données\\exemple_ce.xls");
-            FileOutputStream outWorkbookRelation = new FileOutputStream("C:\\Users\\Lsvai\\Desktop\\Conception et déveleppement d'une application\\Relation.xls");
+            FileOutputStream outWorkbookSource = new FileOutputStream("PATHNAME\\exemple_ce.xls");
+            FileOutputStream outWorkbookRelation = new FileOutputStream("PATHNAME\\Relation.xls");
             workbookSource.getWorkbook().write(outWorkbookSource);
             workbookRelation.getWorkbook().write(outWorkbookRelation);
             outWorkbookSource.close();
